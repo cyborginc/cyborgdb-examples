@@ -50,3 +50,6 @@ chroma_bench_db/
 # OS
 .DS_Store
 Thumbs.db
+
+# Local
+local-archive
