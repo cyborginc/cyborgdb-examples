@@ -37,8 +37,11 @@ wheels/
 *.tar
 wiki_all_*/
 
-# ChromaDB database
-chroma_bench_db/
+# Example DBs
+chroma*/
+tmp*/
+tmp/
+qdrant_*/
 
 # IDEs
 .vscode/
@@ -56,3 +59,4 @@ local-archive
 
 # Gradio
 .gradio/
+*.log
