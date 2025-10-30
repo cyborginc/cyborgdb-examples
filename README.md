@@ -23,7 +23,7 @@ A production-ready RAG chatbot with end-to-end encrypted vector search. Upload d
 
 Fraud detection using encrypted vector similarity search on credit card transaction embeddings.
 
-- Uses CyborgDB-lite with in-memory storage
+- Uses CyborgDB with in-memory storage
 - Demonstrates similarity search on encrypted fraud patterns
 - Privacy-preserving analytics
 
