@@ -37,7 +37,7 @@ Side-by-side comparisons showing how vec2text attacks can recover original text 
 Both notebooks demonstrate:
 - Direct on-disk extraction from each backend (ChromaDB SQLite, Qdrant SQLite+pickle, CyborgDB on-disk RocksDB)
 - Vec2text inversion attacks on plaintext embeddings
-- Protection provided by CyborgDB's encryption — the on-disk bytes are high-entropy ciphertext, so the same attack fails
+- Protection provided by CyborgDB's encryption
 
 ## Getting Started
 
