@@ -13,6 +13,7 @@ Vector embeddings capture semantic meaning from your data. Recent research shows
 A production-ready RAG chatbot with end-to-end encrypted vector search. Upload documents, ask questions, and see the difference between plaintext and encrypted vectors.
 
 - Single-node CyborgDB service with an on-disk encrypted index — no external database required
+- Vector, BM25 keyword, and hybrid retrieval modes, with a side-by-side comparison of what each one finds
 - OpenAI integration for LLM responses (an [NVIDIA NIM variant](./encrypted-rag/encrypted-rag-chatbot-nim.ipynb) keeps the LLM on-prem too)
 - Gradio web interface
 - Runs on Google Colab or locally
@@ -23,7 +24,7 @@ A production-ready RAG chatbot with end-to-end encrypted vector search. Upload d
 
 Fraud detection using encrypted vector similarity search on credit card transaction embeddings.
 
-- Uses CyborgDB with in-memory storage
+- Uses CyborgDB with an on-disk encrypted index
 - Demonstrates similarity search on encrypted fraud patterns
 - Privacy-preserving analytics
 
@@ -35,7 +36,7 @@ Side-by-side comparisons showing how vec2text attacks can recover original text 
 - **Qdrant vs CyborgDB** - Same comparison with Qdrant's local file-based storage
 
 Both notebooks demonstrate:
-- Direct on-disk extraction from each backend (ChromaDB SQLite, Qdrant SQLite+pickle, CyborgDB on-disk RocksDB)
+- Direct on-disk extraction from each backend (ChromaDB SQLite, Qdrant SQLite+pickle, CyborgDB on-disk segment logs)
 - Vec2text inversion attacks on plaintext embeddings
 - Protection provided by CyborgDB's encryption
 
