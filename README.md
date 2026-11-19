@@ -4,7 +4,7 @@ Example notebooks demonstrating encrypted vector search with [CyborgDB](https://
 
 ## Why Encrypt Embeddings?
 
-Vector embeddings capture semantic meaning from your data. Recent research shows that machine learning attacks can reconstruct original text from unencrypted embeddings stored in vector databases. CyborgDB uses homomorphic encryption to protect your vectors while maintaining full search functionality.
+Vector embeddings capture semantic meaning from your data. Recent research shows that machine learning attacks can reconstruct original text from unencrypted embeddings stored in vector databases. CyborgDB keeps vectors encrypted at rest and in use, so a breach of the index exposes ciphertext, and search still works.
 
 ## Examples
 
@@ -39,6 +39,15 @@ Both notebooks demonstrate:
 - Direct on-disk extraction from each backend (ChromaDB SQLite, Qdrant SQLite+pickle, CyborgDB on-disk segment logs)
 - Vec2text inversion attacks on plaintext embeddings
 - Protection provided by CyborgDB's encryption
+
+### 4. LangChain Quickstart ([`langchain-quickstart/`](./langchain-quickstart/))
+
+The shortest path to an encrypted vector store in LangChain: install `langchain-cyborgdb`, create an encrypted index on local disk, search it, and use it as a retriever.
+
+- No API keys and no external services (free tier, built-in embedding model)
+- Runs top to bottom in about a minute
+
+**[Open in Colab](https://colab.research.google.com/github/cyborginc/cyborgdb-examples/blob/main/langchain-quickstart/langchain-quickstart.ipynb)**
 
 ## Getting Started
 
