@@ -38,6 +38,7 @@ wheels/
 wiki_all_*/
 
 # Example DBs
+cyborgdb-data/
 chroma*/
 tmp*/
 tmp/
